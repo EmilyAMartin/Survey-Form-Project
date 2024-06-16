@@ -7,181 +7,116 @@
     <link rel="stylesheet" href="styles.css"> 
   </head>
 
-<!-- Headers and Description -->
-<div class="container">
-<h1 id="title">Health Check Survey</h1>
-<p id="description"> Personal Information</p>
-
+<!-- Headers-->
+<div class="flex-container" id="survey-container">
+  <div class="header" id="main-title">Health Check Survey</div>
 <!--Form-->
-<form id="survey-form">
-<h3>Full Name</h3>
-<label id="name-label">
-<input id="name" type="text" placeholder="Enter your name" required></input></label>
-<h3>Email Address</h3>
-<label id="email-label">
-<input id="email" type="email" placeholder="Enter your email" Address" required></input></label>
-<h3>Age</h3>
-<label id="number-label">
-<input id="number" type="number" placeholder="Age" min="18" max="120"></input></label>
-<h3>Gender</h3>
-<select id="dropdown" autocomplete="off">
-  <option value=""selected></option>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-  <option value="Transgender">Transgender</option>
-  <option value="Non-binary/Non-conforming">Non-binary/Non-conforming</option>
-  <option value="Prefer not to respond">Prefer not to respond</option>
-</select>
+  <div class="sub-header"> Personal Information</div>
+  <form class="form" id="survey-form">
+  <div class="sub-header">Full Name</div>
+    <label id="name-label"><input id="name" type="text" placeholder="Enter your name" required></input></label>
+  <div class="sub-header">Email Address</div>
+    <label id="email-label"><input id="email" type="email" placeholder="Enter your email" Address" required></input></label>
+  <div class="sub-header">Age</div>
+    <label id="number-label"><input id="number" type="number" placeholder="Age" min="18" max="120"></input></label>
+  <div class="sub-header">Gender</div>
+    <select class="dropdown-menu" id="dropdown" autocomplete="off">
+    <option value=""selected></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Transgender">Transgender</option>
+    <option value="Non-binary/Non-conforming">Non-binary/Non-conforming</option>
+    <option value="Prefer not to respond">Prefer not to respond</option>
+    </select>
 
 <!-- Question Section  -->
-<p>How often do you see a doctor?</p>
-<input type="radio" id="option 1" name="radio" value="Every Month">
-<label for="Every Month"> Every Month</label><br>
-<input type="radio" id="option 2" name="radio" value="Every Three Months">
-<label for="Every Three Months">Every Three Months</label><br>
-<input type="radio" id="option 3" name="radio" value="Every Six Months">
-<label for="Every Six Months">Every Six Months</label><br>
-<input type="radio" id="option 4" name="radio" value="Every Year">
-<label for="Every Year">Every Year</label><br>
-<input type="radio" id="option 5" name="radio" value="Every Five Years">
-<label for="Every Five Years">Every Five Years</label><br>
+  <div class="text" id="survey-questions">How often do you see a doctor?</div>
+    <input type="radio" id="option 1" name="radio" value="Every Month"><label for="Every Month"> Every Month</label><br>
+    <input type="radio" id="option 2" name="radio" value="Every Three Months"><label for="Every Three Months">Every Three Months</label><br>
+    <input type="radio" id="option 3" name="radio" value="Every Six Months"><label for="Every Six Months">Every Six Months</label><br>
+    <input type="radio" id="option 4" name="radio" value="Every Year"><label for="Every Year">Every Year</label><br>
+    <input type="radio" id="option 5" name="radio" value="Every Five Years"><label for="Every Five Years">Every Five Years</label><br>
 
-<p>How would you describe your physical health?</p>
-<input type="radio" id="option 1" name="radio" value="Excellent">
-<label for="Excellent">Excellent</label><br>
-<input type="radio" id="option 2" name="radio" value="Very Good">
-<label for="Very Good">Very Good</label><br>
-<input type="radio" id="option 3" name="radio" value="Good">
-<label for="Good">Good</label><br>
-<input type="radio" id="option 4" name="radio" value="Fair">
-<label for="Fair">Fair</label><br>
-<input type="radio" id="option 5" name="radio" value="Poor">
-<label for="Poor">Poor</label><br>
+  <div class="text" id="survey-questions">How would you describe your physical health?</div>
+    <input type="radio" id="option 1" name="radio" value="Excellent"><label for="Excellent">Excellent</label><br>
+    <input type="radio" id="option 2" name="radio" value="Very Good"><label for="Very Good">Very Good</label><br>
+    <input type="radio" id="option 3" name="radio" value="Good"><label for="Good">Good</label><br>
+    <input type="radio" id="option 4" name="radio" value="Fair"><label for="Fair">Fair</label><br>
+    <input type="radio" id="option 5" name="radio" value="Poor"><label for="Poor">Poor</label><br>
 
-<p>How would you describe your mental health?</p>
-<input type="radio" id="option 1" name="radio" value="Excellent">
-<label for="Excellent"> Excellent</label><br>
-<input type="radio" id="option 2" name="radio" value="Very Good">
-<label for="Very Good">Very Good</label><br>
-<input type="radio" id="option 3" name="radio" value="Good">
-<label for="Good">Good</label><br>
-<input type="radio" id="option 4" name="radio" value="Fair">
-<label for="Fair">Fair</label><br>
-<input type="radio" id="option 5" name="radio" value="Poor">
-<label for="Poor">Poor</label><br>
+  <div class="text" id="survey-questions">How would you describe your mental health?</div>
+    <input type="radio" id="option 1" name="radio" value="Excellent"><label for="Excellent"> Excellent</label><br>
+    <input type="radio" id="option 2" name="radio" value="Very Good"><label for="Very Good">Very Good</label><br>
+    <input type="radio" id="option 3" name="radio" value="Good"><label for="Good">Good</label><br>
+    <input type="radio" id="option 4" name="radio" value="Fair"><label for="Fair">Fair</label><br>
+    <input type="radio" id="option 5" name="radio" value="Poor"><label for="Poor">Poor</label><br>
 
-<p>How would you rate your stress level?</p>
-<input type="radio" id="option 1" name="radio" value="None" >
-<label for="None">None</label><br>
-<input type="radio" id="option 2" name="radio" value="Low">
-<label for="Low">Low</label><br>
-<input type="radio" id="option 3" name="radio" value="Moderate">
-<label for="Moderate">Moderate</label><br>
-<input type="radio" id="option 4" name="radio" value="High">
-<label for="High">High</label><br>
-<input type="radio" id="option 5" name="radio" value="Very High">
-<label for="Very High">Very High</label><br>
+  <div class="text" id="survey-questions">How would you rate your stress level?</div>
+    <input type="radio" id="option 1" name="radio" value="None" ><label for="None">None</label><br>
+    <input type="radio" id="option 2" name="radio" value="Low"><label for="Low">Low</label><br>
+    <input type="radio" id="option 3" name="radio" value="Moderate"><label for="Moderate">Moderate</label><br>
+    <input type="radio" id="option 4" name="radio" value="High"><label for="High">High</label><br>
+    <input type="radio" id="option 5" name="radio" value="Very High"><label for="Very High">Very High</label><br>
 
-<p>How often do you engage in physical activity or exercise?</p>
-<input type="radio" id="option 1" name="radio" value="Daily">
-<label for="Daily">Daily</label><br>
-<input type="radio" id="option 2" name="radio" value="3-5x per Week">
-<label for="3-5x per Week">3-5x per Week</label><br>
-<input type="radio" id="option 3" name="radio" value="1-2x per Week">
-<label for="1-2x per Week">1-2x per Week</label><br>
-<input type="radio" id="option 4" name="radio" value= "Rarely">
-<label for="Rarely">Rarely</label><br>
-<input type="radio" id="option 5" name="radio" value="Never">
-<label for="Never">Never</label><br>
+  <div class="text" id="survey-questions">How often do you engage in physical activity or exercise?</div>
+    <input type="radio" id="option 1" name="radio" value="Daily"><label for="Daily">Daily</label><br>
+    <input type="radio" id="option 2" name="radio" value="3-5x per Week"><label for="3-5x per Week">3-5x per Week</label><br>
+    <input type="radio" id="option 3" name="radio" value="1-2x per Week"><label for="1-2x per Week">1-2x per Week</label><br>
+    <input type="radio" id="option 4" name="radio" value= "Rarely"><label for="Rarely">Rarely</label><br>
+    <input type="radio" id="option 5" name="radio" value="Never"><label for="Never">Never</label><br>
 
-<p>How often do you consume fruits and vegetables in your diet?</p>
-<input type="radio" id="option 1" name="radio" value="Daily">
-<label for="Daily">Daily</label><br>
-<input type="radio" id="option 2" name="radio" value="3-5x per Week">
-<label for="3-5x per Week">3-5x per Week</label><br>
-<input type="radio" id="option 3" name="radio" value="1-2x per Week">
-<label for="1-2x per Week">1-2x per Week</label><br>
-<input type="radio" id="option 4" name="radio" value="Rarely">
-<label for="Rarely">Rarely</label><br>
-<input type="radio" id="option 5" name="radio" value="Never">
-<label for="Never">Never</label><br>
+  <div class="text" id="survey-questions">How often do you consume fruits and vegetables in your diet?</div>
+    <input type="radio" id="option 1" name="radio" value="Daily"><label for="Daily">Daily</label><br>
+    <input type="radio" id="option 2" name="radio" value="3-5x per Week"><label for="3-5x per Week">3-5x per Week</label><br>
+    <input type="radio" id="option 3" name="radio" value="1-2x per Week"><label for="1-2x per Week">1-2x per Week</label><br>
+    <input type="radio" id="option 4" name="radio" value="Rarely"><label for="Rarely">Rarely</label><br>
+    <input type="radio" id="option 5" name="radio" value="Never"><label for="Never">Never</label><br>
 
 
-<p>Do you smoke or use tobacco products?</p>
-<input type="radio" id="option 1" name="radio" value="Never">
-<label for="Never"> Never</label><br>
-<input type="radio" id="option 2" name="radio" value="Rarely">
-<label for="Rarely">Rarely</label><br>
-<input type="radio" id="option 3" name="radio" value="Sometimes">
-<label for="Sometimes">Sometimes</label><br>
-<input type="radio" id="option 4" name="radio" value="Often">
-<label for="Often">Often</label><br>
-<input type="radio" id="option 5" name="radio" value="Always">
-<label for="Always">Always</label><br>
+  <div class="text" id="survey-questions"></div>Do you smoke or use tobacco products?</div>
+    <input type="radio" id="option 1" name="radio" value="Never"><label for="Never"> Never</label><br>
+    <input type="radio" id="option 2" name="radio" value="Rarely"><label for="Rarely">Rarely</label><br>
+    <input type="radio" id="option 3" name="radio" value="Sometimes"><label for="Sometimes">Sometimes</label><br>
+    <input type="radio" id="option 4" name="radio" value="Often"><label for="Often">Often</label><br>
+    <input type="radio" id="option 5" name="radio" value="Always"><label for="Always">Always</label><br>
 
-<p>Do you drink alcohol? If so, how often?</p>
-<input type="radio" id="option 1" name="radio" value="Never">
-<label for="Never">Never</label><br>
-<input type="radio" id="option 2" name="radio" value="Rarely">
-<label for="Rarely">Rarely</label><br>
-<input type="radio" id="option 3" name="radio" value="Sometimes">
-<label for="Sometimes">Sometimes</label><br>
-<input type="radio" id="option 4" name="radio" value="Often">
-<label for="Often">Often</label><br>
-<input type="radio" id="option 5" name="radio" value="Always">
-<label for="Always">Always</label><br>
+  <div class="text" id="survey-questions">Do you drink alcohol? If so, how often?</div>
+    <input type="radio" id="option 1" name="radio" value="Never"><label for="Never">Never</label><br>
+    <input type="radio" id="option 2" name="radio" value="Rarely"><label for="Rarely">Rarely</label><br>
+    <input type="radio" id="option 3" name="radio" value="Sometimes"><label for="Sometimes">Sometimes</label><br>
+    <input type="radio" id="option 4" name="radio" value="Often"><label for="Often">Often</label><br>
+    <input type="radio" id="option 5" name="radio" value="Always"><label for="Always">Always</label><br>
 
 
-<p>Do you take any drugs?</p>
-<input type="radio" id="option 1" name="radio" value="Never">
-<label for="Never">Never</label><br>
-<input type="radio" id="option 2" name="radio" value="Rarely">
-<label for="Rarely">Rarely</label><br>
-<input type="radio" id="option 3"  name="radio" value="Sometimes">
-<label for="Sometimes">Sometimes</label><br>
-<input type="radio" id="option 4"  name="radio" value="Often">
-<label for="Often">Often</label><br>
-<input type="radio" id="option 5" name="radio" value="Always">
-<label for="Always">Always</label><br>
+  <div class="text" id="survey-questions">Do you take any drugs?</div>
+    <input type="radio" id="option 1" name="radio" value="Never"><label for="Never">Never</label><br>
+    <input type="radio" id="option 2" name="radio" value="Rarely"><label for="Rarely">Rarely</label><br>
+    <input type="radio" id="option 3"  name="radio" value="Sometimes"><label for="Sometimes">Sometimes</label><br>
+    <input type="radio" id="option 4"  name="radio" value="Often"><label for="Often">Often</label><br>
+    <input type="radio" id="option 5" name="radio" value="Always"><label for="Always">Always</label><br>
 
-<p>Do you have any of these chronic disease?</p>
-<input type="checkbox" id="option 1" value="Cardiovascular Disease">
-<label for="Cardiovascular Disease">Cardiovascular Disease</label><br>
-<input type="checkbox" id="option 2" value="Stroke">
-<label for="Stroke">Stroke</label><br>
-<input type="checkbox" id="option 3" value="Lung Cancer">
-<label for="Lung Cancer">Lung Cancer</label><br>
-<input type="checkbox" id="option 4" value="Colorectal Cancer">
-<label for="Colorectal Cancer">Colorectal Cancer</label><br>
-<input type="checkbox" id="option 5" value="Depression">
-<label for="Depression">Depression</label><br>
-<input type="checkbox" id="option 6" value="Type 2 Diabetes">
-<label for="Type 2 Diabetes">Type 2 Diabetes</label><br>
-<input type="checkbox" id="option 7" value="Arthritis">
-<label for="Arthritis">Arthritis</label><br>
-<input type="checkbox" id="option 8" value="Osteoporosis">
-<label for="Osteoporosis">Osteoporosis</label><br>
-<input type="checkbox" id="option 9" value="Asthma">
-<label for="Asthma">Asthma</label><br>
-<input type="checkbox" id="option 10" value="Obesity">
-<label for="Obesity">Obesity</label><br>
-<input type="checkbox" id="option 11" value="Chronic Obstructive Pulmonary Disease">
-<label for="Chronic Obstructive Pulmonary Disease">Chronic Obstructive Pulmonary Disease</label><br>
-<input type="checkbox" id="option 12" value="Chronic Kidney Disease">
-<label for="Chronic Kidney Disease">Chronic Kidney Disease</label><br>
-<input type="checkbox" id="option 13" value="Oral Disease">
-<label for="Oral Disease">Oral Disease</label><br>
+  <div class="text" id="survey-questions">Do you have any of these chronic disease?</div>
+    <input type="checkbox" id="option 1" value="Cardiovascular Disease"><label for="Cardiovascular Disease">Cardiovascular Disease</label><br>
+    <input type="checkbox" id="option 2" value="Stroke"><label for="Stroke">Stroke</label><br>
+    <input type="checkbox" id="option 3" value="Lung Cancer"><label for="Lung Cancer">Lung Cancer</label><br>
+    <input type="checkbox" id="option 4" value="Colorectal Cancer"><label for="Colorectal Cancer">Colorectal Cancer</label><br>
+    <input type="checkbox" id="option 5" value="Depression"><label for="Depression">Depression</label><br>
+    <input type="checkbox" id="option 6" value="Type 2 Diabetes"><label for="Type 2 Diabetes">Type 2 Diabetes</label><br>
+    <input type="checkbox" id="option 7" value="Arthritis"><label for="Arthritis">Arthritis</label><br>
+    <input type="checkbox" id="option 8" value="Osteoporosis"><label for="Osteoporosis">Osteoporosis</label><br>
+    <input type="checkbox" id="option 9" value="Asthma"><label for="Asthma">Asthma</label><br>
+    <input type="checkbox" id="option 10" value="Obesity"><label for="Obesity">Obesity</label><br>
+    <input type="checkbox" id="option 11" value="Chronic Obstructive Pulmonary Disease"><label for="Chronic Obstructive Pulmonary Disease">Chronic Obstructive Pulmonary Disease</label><br>
+    <input type="checkbox" id="option 12" value="Chronic Kidney Disease"><label for="Chronic Kidney Disease">Chronic Kidney Disease</label><br>
+    <input type="checkbox" id="option 13" value="Oral Disease"><label for="Oral Disease">Oral Disease</label><br>
 
-<p>Do you take any medications </p>
-<input type="radio" id="Yes" name="radio" value="Yes">
-<label for="Yes">Yes</label><br>
-<input type="radio" id="No" name="radio" value="No">
-<label for="No">No</label><br>  
+  <div class="text" id="survey-questions">Do you take any medications</div>
+    <input type="radio" id="Yes" name="radio" value="Yes"><label for="Yes">Yes</label><br>
+    <input type="radio" id="No" name="radio" value="No"><label for="No">No</label><br>  
 
-<p> If you have selected Yes, please list the medications below.</p>
-<textarea id="text box" name="text box" rows="4" cols="50"></textarea>
-
-<input id="submit" type="submit" value="Submit">
+  <div class="text" id="survey-questions">If you have selected Yes, please list the medications below.</div>
+    <textarea id="text box" name="text box" rows="4" cols="50"></textarea>
+    <input id="submit" type="submit" value="Submit">
 </form>
 </div>
 </html>
