@@ -1,22 +1,25 @@
 body{
   font-family: Poppins;
   color:#ffffff; 
+  background-color: #ffffff;
 }
  #survey-container{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:#364E4E;
   border-radius: 1rem;
-  
+  padding-top: 2rem;
+  background-color: #364E4E;
+ }
+.header {
+  font-size: 2rem;
 }
-#header{
+.sub-header{
+ font-size: 1rem;
+ padding: 0.5rem 0rem;
+}
 
-}
-#sub-header{
-
-}
 input[type="text"]{
   font-size: 1.0rem;
   width:100%;
@@ -89,13 +92,5 @@ body::before {
   height: 100%;
   width: 100%;
   z-index:-1;
-  background-image: linear-gradient(
-      115deg,
-      #364E4E80,
-      #D5F4E670
-    ),
-    url(https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=marcelo-leal-k7ll1hpdhFA-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
