@@ -3,6 +3,8 @@ body{
   font-family: Poppins;
   color:#ffffff; 
   background-color: #ffffff;
+  background-image: url(medical.jpg);
+  background-size: cover;
 }
  #survey-container{
   display: flex;
@@ -13,8 +15,8 @@ body{
   padding-bottom: 3rem;
  }
  #survey-form{
-  background-color: #364E4E;
-  padding: 2rem 2rem;
+  background-color: #364E4E99;
+  padding: 2rem 6rem;
   border-radius: 1rem;
   max-width: 100%;
  }
