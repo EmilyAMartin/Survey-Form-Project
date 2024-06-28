@@ -1,9 +1,9 @@
-## Project Demo
+### Project Demo
 View project here https://emilyamartin.github.io/Survey-Form-Project/
 
-## Description
+### Description
 
-## Credits
+### Credits
 Photo by Marcelo Leal on Unsplash
 Fonts by Google Fonts
    
