@@ -70,6 +70,7 @@ input[type="submit"] {
 #text-box{
   background-color: #fff;
   font-size:1.0rem;
+  width: 36rem;
 }
 #submit-button{
   background-color:  #d5f4e6;
@@ -81,4 +82,19 @@ input[type="submit"] {
 }
 #submit-button:active{
 background-color: #a6c2b5 ;
+}
+@media only screen and (max-width: 850px) {
+  #survey-form{
+    padding: 2rem 4rem;
+    max-width: 50%;
+   }
+   .header {
+    font-size: 1.5rem;
+  }
+  #submit-button {
+    width: 50%;
+  }
+  #text-box{
+    width: 14rem;
+  }
 }

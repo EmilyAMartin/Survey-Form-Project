@@ -2,7 +2,7 @@
 View project here https://emilyamartin.github.io/Survey-Form-Project/
 
 ### Description
-This is a quick survey I made for the first HTML project on freecodecamp.  
+This is a quick survey form I made for the first freecodecamp HTML project.  
 
 ### Credits
 Photo by Marcelo Leal on Unsplash
